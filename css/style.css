@@ -58,67 +58,35 @@ img{
 }
 /* spacing css ends */
 
-/* header starts */
-.header-bg{
-    background: url(../images/banner1.png) no-repeat center / cover;
-    position: relative;
-    z-index: 1;
+/* menu starts */
 
-}
-.header-bg .slide-bar ul{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-right: 30px;
-}
-.header-bg .slide-bar ul li a{
-    font-size: 20px;
-    line-height: 60px;
-    color: #fff;
-    transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;   
-    -moz-transition: all linear 0.3s;   
-    -ms-transition: all linear 0.3s;   
-    -webkit-transition: all linear 0.3s;
-}
-.header-bg .slide-bar ul li:hover a{
-    color: var(--ic);
-}
-.header-bg::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.header-bg .header .main-menu{
+.menu-bg .menu .main-menu{
     padding-top: 60px;
+    position: absolute;
+    z-index: 20;
 }
-.header-bg .header .main-menu .menu-logo{
+.menu-bg .menu .main-menu .menu-logo{
     width: 230px;
     float: left;
+    margin-right: 340px;
 }
-.header-bg .header .main-menu .menu-logo img{
+.menu-bg .menu .main-menu .menu-logo img{
     width: 100%;
 }
-.header-bg .header .main-menu .menu-list{
+.menu-bg .menu .main-menu .menu-list{
     width: 600px;
     float: right;
     padding-top: 27px;
 }
-.header-bg .header .main-menu .menu-list ul{
+.menu-bg .menu .main-menu .menu-list ul{
     float: right;
 }
-.header-bg .header .main-menu .menu-list ul li{
+.menu-bg .menu .main-menu .menu-list ul li{
     float: left;
     margin-left: 40px;
     position: relative;
 }
-.header-bg .header .main-menu .menu-list ul li .list .line{
+.menu-bg .menu .main-menu .menu-list ul li .list .line{
     width: 15px;
     height: 1px;
     background: var(--ic);
@@ -133,11 +101,11 @@ img{
     -ms-transition: all linear 0.3s;   
     -webkit-transition: all linear 0.3s;
 }
-.header-bg .header .main-menu .menu-list ul li:hover .list .line{
+.menu-bg .menu .main-menu .menu-list ul li:hover .list .line{
     left: 0;
     opacity: 1;
 }
-.header-bg .header .main-menu .menu-list ul li .list a{
+.menu-bg .menu .main-menu .menu-list ul li .list a{
     color: #fff;
     font-family: var(--pf);
     font-size: 14px;
@@ -150,10 +118,10 @@ img{
     -ms-transition: all linear 0.3s;   
     -webkit-transition: all linear 0.3s;
 }
-.header-bg .header .main-menu .menu-list ul li:hover .list a{
+.menu-bg .menu .main-menu .menu-list ul li:hover .list a{
     color: var(--ic);
 }
-.header-bg .header .main-menu .menu-list ul li .special a{
+.menu-bg .menu .main-menu .menu-list ul li .special a{
     color: #fff;
     font-family: var(--pf);
     font-size: 14px;
@@ -165,19 +133,59 @@ img{
     padding: 6px 21px;
     border-radius: 5px;
 }
-.header-bg .header .main-menu .menu-list ul li:hover .special a{
+.menu-bg .menu .main-menu .menu-list ul li:hover .special a{
     background: #fff;
     color: var(--ic);
 }
-.header-bg .header .banner-content{
+/* menu ends */
+
+/* header starts */
+.banner-bg{
+    background: url(../images/banner1.png) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 130px;
+
+}
+.banner-bg .slide-bar ul{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 30px;
+}
+.banner-bg .slide-bar ul li a{
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;   
+    -moz-transition: all linear 0.3s;   
+    -ms-transition: all linear 0.3s;   
+    -webkit-transition: all linear 0.3s;
+}
+.banner-bg .slide-bar ul li:hover a{
+    color: var(--ic);
+}
+.banner-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-bg .banner .banner-content{
     padding-top: 110px;
 }
-.header-bg .header .banner-content .banner-text{
+.banner-bg .banner .banner-content .banner-text{
     width: 470px;
     float: right;
     text-align: right;
 }
-.header-bg .header .banner-content .banner-text h1{
+.banner-bg .banner .banner-content .banner-text h1{
     font-family: var(--hf);
     font-size: 56px;
     font-weight: 700;
@@ -185,10 +193,10 @@ img{
     text-transform: uppercase;
     padding-bottom: 15px;
 }
-.header-bg .header .banner-content .banner-text h1::first-letter{
+.banner-bg .banner .banner-content .banner-text h1::first-letter{
     color: var(--ic);
 }
-.header-bg .header .banner-content .banner-text h2{
+.banner-bg .banner .banner-content .banner-text h2{
     font-family: var(--hf);
     font-size: 32px;
     font-weight: 300;
@@ -196,13 +204,13 @@ img{
     text-transform: uppercase;
     padding-bottom: 3px; 
 }
-.header-bg .header .banner-content .banner-text .line-2{
+.banner-bg .banner .banner-content .banner-text .line-2{
     width: 200px;
     height: 1px;
     background: #fff;
     display: inline-block;
 }
-.header-bg .header .banner-content .banner-text p{
+.banner-bg .banner .banner-content .banner-text p{
     font-family: var(--pf);
     font-size: 14px;
     font-weight: 400;
@@ -212,15 +220,15 @@ img{
     /* padding-top: 22px; 
     padding-bottom: 60px;  */
 }
-.header-bg .header .banner-content .banner-text p:first-of-type{
+.banner-bg .banner .banner-content .banner-text p:first-of-type{
     padding-top: 22px;
     padding-bottom: 7px;
 }
-.header-bg .header .banner-content .banner-text p:last-of-type{
+.banner-bg .banner .banner-content .banner-text p:last-of-type{
     padding-top: 7px;
     padding-bottom: 60px;
 }
-.header-bg .header .banner-content .banner-text a{
+.banner-bg .banner .banner-content .banner-text a{
     background: var(--ic);
     color: #fff;
     /* line-height: 60px; */
@@ -235,16 +243,16 @@ img{
     -webkit-transition: all linear 0.3s;
     margin-bottom: 130px;
 }
-.header-bg .header .banner-content .banner-text a:hover{
+.banner-bg .banner .banner-content .banner-text a:hover{
     
     color: var(--hc);
     background: var(--sb);
 }
-.header-bg .header .banner-content .banner-text a .para{
+.banner-bg .banner .banner-content .banner-text a .para{
     text-align: left;
     line-height: 60px;
 }
-.header-bg .header .banner-content .banner-text a .para i{
+.banner-bg .banner .banner-content .banner-text a .para i{
     font-size: 33px;
     /* line-height: 20px; */
     float: left;
@@ -252,21 +260,21 @@ img{
     padding-bottom: 16px;
     padding-right: 10px;
 }
-.header-bg .header .banner-content .banner-text a .para .button-text{
+.banner-bg .banner .banner-content .banner-text a .para .button-text{
     float: left;
     line-height: 20px;
 }
-.header-bg .header .banner-content .banner-text a .para .button-text .text-1{
+.banner-bg .banner .banner-content .banner-text a .para .button-text .text-1{
     font-size: 14px;
     font-family: var(--pf);
     font-weight: 400;
     /* line-height: 20px; */
     padding-top: 10px;
 }
-.header-bg .header .banner-content .banner-text a .para .button-text .text-1::first-letter{
+.banner-bg .banner .banner-content .banner-text a .para .button-text .text-1::first-letter{
     text-transform: capitalize;
 }
-.header-bg .header .banner-content .banner-text a .para .button-text .text-2{
+.banner-bg .banner .banner-content .banner-text a .para .button-text .text-2{
     font-family: var(--hf);
     font-size: 18px;
     font-weight: 700;

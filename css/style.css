@@ -139,7 +139,7 @@ img{
 }
 /* menu ends */
 
-/* header starts */
+/* banner starts */
 .banner-bg{
     background: url(../images/banner1.png) no-repeat center / cover;
     position: relative;
@@ -282,7 +282,7 @@ img{
     text-transform: capitalize;
     padding-bottom: 12px;
 }
-/* header ends */
+/* banner ends */
 
 /* about section starts */
 .about-bg .about{
